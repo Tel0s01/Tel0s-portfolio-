@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Photography | Tel0s</title>
+    <style>
+      @font-face {
+        font-family: "Host Grotesk";
+        src: url("HostGrotesk-VariableFont_wght.ttf") format("truetype-variations");
+        font-weight: 100 900;
+      }
+
+      body {
+        background-color: #000000;
+        color: #ffffff;
+        font-family: "Host Grotesk", sans-serif;
+        margin: 0;
+        padding: 60px 40px;
+      }
+
+      a {
+        color: #ffffff;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 40px;
+      }
+
+      .navbar .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+      }
+
+      .navbar .nav-links a {
+        font-size: 14px;
+      }
+
+      .photo-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+        margin-top: 100px;
+        margin-bottom: 100px;
+      }
+
+      .photo-grid img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-links">
+        <a href="index.html" class="logo"><img src="LOGOMARK.jpg" alt="Tel0s" style="height: 50px"></a>
+        <a href="design.html">Design</a>
+        <a href="photography.html">Photography</a>
+        <a href="archive.html">Archive</a>
+      </div>
+    </nav>
+
+    <h1>Photography</h1>
+
+    <div class="photo-grid">
+      <img src="photo1.jpg" alt="Photo one">
+      <img src="photo2.jpg" alt="Photo two">
+      <img src="photo3.jpg" alt="Photo three">
+      <img src="photo4.jpg" alt="Photo four">
+      <img src="photo5.jpg" alt="Photo five">
+      <img src="photo6.jpg" alt="Photo six">
+    </div>
+  </body>
+</html>

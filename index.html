@@ -2,7 +2,114 @@
 <html>
   <head>
     <title>Tel0s</title>
+    <style>
+      
+     @font-face {
+        font-family: "Host Grotesk";
+        src: url("HostGrotesk-VariableFont_wght.ttf") format("truetype-variations");
+        font-weight: 100 900;
+      }
+      body {
+        background-color: #030303;
+        color: #ffffff;
+        font-family: "Host Grotesk", sans-serif;
+        margin: 0;
+        padding: 60px 40px;
+      }
+.email-copy {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  color: #000fff;
+  cursor: pointer;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s ease, color 0.1s ease;
+}
+
+.email-copy:hover {
+  border-bottom: 1px solid #905ad6;
+}
+
+.email-copy:active {
+  color: #ffffff;
+}
+
+
+      .intro {
+  font-size: 18px;
+  margin-bottom: 30px;
+  max-width: 600px;
+  margin-top: 0px;
+  
+}
+  .contact-links {
+        display: flex;
+        gap: 20px;
+        margin-bottom: 30px;
+      }
+.contact-links a {
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 0px;
+        color: #000fff;
+        border-bottom: 1px solid transparent;
+        transition: border-color 0.2s ease;
+      }
+
+      .contact-links a:hover {
+        border-bottom: 1px solid #905ad6;
+        text-decoration: none;
+      }
+      .hero-image {
+        max-width: 900px;
+        width: 100%;
+        display: block;
+      }
+
+      .links {
+        margin-top: 30px;
+        display: flex;
+        gap: 60px;
+      }
+
+      .links a {
+        color: #eee9e9;
+        text-decoration: none;
+        font-size: 18px;
+      }
+
+      .links a:hover {
+        text-decoration: underline;
+      }
+
+      .link-two {
+        margin-top: 40px;
+      }
+      .link-three { 
+        margin-top: 80px;
+        margin-bottom: 40px;
+      }
+    </style>
   </head>
   <body>
-    <p>Hello! Welcome to my portfolio, my name is Cooper I'm an aspiring graphic designer. </p>
+    
+  
+
+    <p class="intro">Hello! Welcome to my portfolio. I am an aspiring graphic designer and documentary photographer. Visually I operate around a few core ideals, these being distortion, digital rot, and imagery linked to conflict within recent memory. Thematically, these articulate the concepts disjunction, and a dissolution of Sobornost.
+ </p>
+
+    <div class="contact-links">
+     <span class="email-copy" onclick="navigator.clipboard.writeText('cooperguillon762@gmail.com')" style="cursor: pointer;">cooperguillon762@gmail.com</span>
+      
+      <a href="https://www.instagram.com/tel0s_1/?utm_source=ig_web_button_share_sheet" target="_blank">tel0s_1</a>
+    </div>
+    <img src="hero.jpg" alt="Main artwork" class="hero-image">
+
+    <div class="links">
+      <a  href="design.html">[Design]</a>
+      <a href="photography.html" class="link-two">[Photography] </a>
+      <a href="archive.html" class="link-three" > [Archive]</a>
+      
+    </div>
+  </body>
 </html>
