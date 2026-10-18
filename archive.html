@@ -83,12 +83,14 @@
         border: 1px solid #ffffff;
         z-index: 10;
       }
-
-      .archive-item:hover .preview {
-        display: block;
-      }
+.archive-item.open .preview {
+  display: block;
+  cursor: pointer;
+}
+      
     </style>
   </head>
+  
   <body>
     <nav class="navbar">
       <a href="index.html" class="logo">Tel0s</a>
@@ -134,10 +136,34 @@
       <div class="archive-item">029.jpg<img class="preview" src="029.jpg" alt=""></div>
       <div class="archive-item">030.jpg<img class="preview" src="030.jpg" alt=""></div>
       <div class="archive-item">031.jpg<video class="preview" src="031.mp4" alt="" autoplay muted loop></video></div>
+      <div class="archive-item">032.jpg<img class="preview" src="032.jpg" alt=""></div>
+     <div class="archive-item">033.jpg<img class="preview" src="033.jpg" alt=""></div>
+      <div class="archive-item">034.jpg<img class="preview" src="034.jpg" alt=""></div>
     </div>
 
     
     
     <p> This is my general archive of my poster series feel free to browse around :  )</p> 
+      <script>
+      const items = document.querySelectorAll('.archive-item');
+
+      items.forEach(item => {
+        item.addEventListener('click', () => {
+          const wasOpen = item.classList.contains('open');
+
+          items.forEach(i => {
+            i.classList.remove('open');
+            const v = i.querySelector('video');
+            if (v) v.pause();
+          });
+
+          if (!wasOpen) {
+            item.classList.add('open');
+            const v = item.querySelector('video');
+            if (v) v.play();
+          }
+        });
+      });
+    </script>
   </body>
 </html>
