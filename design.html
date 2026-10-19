@@ -9,7 +9,19 @@
         src: url("HostGrotesk-VariableFont_wght.ttf") format("truetype-variations");
         font-weight: 100 900;
       }
-.navbar {
+.blurb {
+  max-width: 500px;
+  box-sizing: border-box;
+  margin-top: 50px;
+  padding: 14px 16px;
+ 
+  background: rgba(12, 6, 32, 0.514);
+  font-size: 14px;
+  line-height: 1.55;
+  color: #d8d8d8;
+  cursor: default;
+}
+      .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -97,27 +109,44 @@
 
     <h1>Design</h1>
 
-    <div class="work-grid">
-      <div class="work-item">
-        <img src="027.jpg" alt="Poster one" class="work-image">
-        <p>027: Sept 9 2026</p>
-      </div>
+<div class="work-grid">
 
-      <div class="work-item">
-        <img src="030.jpg" alt="Poster two" class="work-image">
-        <p>030: Sept 21 2026</p>
-      </div>
-
-      <div class="work-item">
-        <img src="029.jpg" alt="Poster three" class="work-image">
-        <p> 029 sept 12</p>
-      </div>
-
-      <div class="work-item">
-        <img src="026.jpg" alt="Poster four" class="work-image">
-        <p>026 Sept 07</p>
-      </div>
+  <div class="work-item">
+    <img src="027.jpg" alt="Poster one" class="work-image">
+    <p>027 - Sept 9 - 2026 - [digital] - A3</p>
+    <div class="blurb">
+      Implied violence fragmented within the typographic elements. There must be a distinction in media where violence is portrayed, not all depictions of violence and armed conflict are implicitly shock content. It lies within intentionally and delivery.
     </div>
+  </div>
+
+  <div class="work-item">
+    <img src="030.jpg" alt="Poster two" class="work-image">
+    <p>030 - Sept 21 - 2026 - [digital] - A3</p>
+    <div class="blurb">
+      Forgotten conflicts, innumerable as they are, present a terrifying reality. The toll of war, both on a physical and ideal level, mustn't be let to decay in the memory of man. One of the physical means of inflicting violence, the RPG-7 is an underlining subject.
+    </div>
+  </div>
+
+  <div class="work-item">
+    <img src="034.jpg" alt="Poster three" class="work-image">
+    <p>034 - Oct 18 - 2026 - [digital] - A3</p>
+    <div class="blurb">
+     Drone warfare is the most intimate expression of the entertainmentization of violence. Where man's last moments on this world, down to his mask of terror can be broadcasted. Such devaluation of the soul. An eternal personality eroded beyond recognition of the Creator. 
+
+    </div>
+  </div>
+
+  <div class="work-item">
+    <img src="026.jpg" alt="Poster four" class="work-image">
+    <p>026 - Sept 8 - 2026 - [digital] - A3</p>
+    <div class="blurb"> 
+      
+      A purely typography composition. Acts as a foundation for title typography in the series going forward. Distorting letter forms mildly. Establishment of the * as a visual symbol 
+
+    </div>
+  </div>
+
+</div>
 
     <script>
       const images = document.querySelectorAll('.work-image');
